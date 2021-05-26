@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".addeditfarmer.EditFarmer"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="BIO INFO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/placeholder"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewCustom"
+                android:text="Name"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:focusable="true" />
+
+            <EditText
+                android:id="@+id/et_firstname"
+                style="@style/viewCustom"
+                android:background="@drawable/background"
+                android:hint="First name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                tools:ignore="TextFields" />
+
+
+            <EditText
+                android:id="@+id/et_othername"
+                style="@style/viewCustom"
+                android:background="@drawable/background"
+                android:hint="Last name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                tools:ignore="TextFields" />
+
+        </LinearLayout>
+
+        <!--Gender section-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <!-- Implement Radio Button-->
+            <!--Gender section ends-->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewCustom"
+                android:text="Date of Birth"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/viewCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:background="@drawable/background"
+                android:hint="Date of Birth"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                tools:ignore="TextFields" />
+
+            <!--Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btSelectDate"
+                android:text="Set Date"/-->
+
+            <Button
+                android:id="@+id/btSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewCustom"
+                android:text="Phone"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:focusable="true" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/viewCustom"
+                android:background="@drawable/background"
+                android:hint="07XXXXXXXX"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                tools:ignore="TextFields" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/viewCustom"
+                android:text="Group Name"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:focusable="true" />
+            <!--Group name is a dropdown menu-->
+            <EditText
+                android:id="@+id/et_group"
+                style="@style/viewCustom"
+                android:background="@drawable/background"
+                android:hint="Group Name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="TextFields" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/viewCustom"
+                android:text="Formal Education"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:focusable="true" />
+            <!--Formal education is a dropdown menu-->
+            <EditText
+                android:id="@+id/et_educ"
+                style="@style/viewCustom"
+                android:background="@drawable/background"
+                android:hint="None"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="TextFields" />
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="BIRTHPLACE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_district"
+            style="@style/viewCustom"
+            android:background="@drawable/background"
+            android:hint="District"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/et_county"
+            style="@style/viewCustom"
+            android:background="@drawable/background"
+            android:hint="County"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/et_subcounty"
+            style="@style/viewCustom"
+            android:background="@drawable/background"
+            android:hint="Sub county"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/et_village"
+            style="@style/viewCustom"
+            android:background="@drawable/background"
+            android:hint="Village"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="COMMENTS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/viewCustom"
+            android:text="Entered by"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/et_comments"
+            style="@style/viewCustom"
+            android:background="@drawable/background"
+            android:hint="Comments"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <TextView
+        style="@style/viewCustom"
+        android:text="Entered by"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/et_enteredby"
+        style="@style/viewCustom"
+        android:background="@drawable/background"
+        android:hint="Name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="TextFields" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_add_farmer"
+        android:text="Submit"
+        style="@style/viewCustom"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>

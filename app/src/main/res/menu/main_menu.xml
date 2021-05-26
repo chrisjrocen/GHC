@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        app:showAsAction="always"/>
+        <!--TODO android:icon="@drawable/ic_local_hospital_white_24dp"-->
+    <item
+        android:id="@+id/log_out"
+        android:title="Log Out"
+        app:showAsAction="always" />
+        <!-- TODO android:icon="@drawable/ic_perm_identity_white_24dp"-->
+
+</menu>
